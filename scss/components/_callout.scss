@@ -1,0 +1,81 @@
+/* ------------------------------------------------------------ *\
+	Callout
+\* ------------------------------------------------------------ */
+
+.callout {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding-block: 50px;
+
+    span {
+        color: #008FC6;
+    }
+
+    .callout__content {
+        font-size: 24px;
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+  
+}
+
+  /* callout md */
+
+    .callout--md {
+        position: relative;
+        padding: unset;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+        background-color: #000;
+
+         @media screen and (max-width: 500px) {
+            margin-bottom: 0;
+          }
+    
+        .callout__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .callout__content {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+             @media screen and (max-width: 500px) {
+               flex-direction: column;
+          }
+        }
+
+        a {
+            color: #008FC6;
+            text-decoration: none;
+            transition: scale .3s ease-in-out;
+        }
+
+        a:hover {
+            scale: 1.1;
+        }
+
+        h2 {
+            margin-right: 25px;
+             @media screen and (max-width: 500px) {
+                margin: 0 0 12px 0;      
+          }
+        }
+    }

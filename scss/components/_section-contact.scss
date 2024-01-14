@@ -1,0 +1,49 @@
+/* ------------------------------------------------------------ *\
+	Section contact
+\* ------------------------------------------------------------ */
+
+.section-contact {
+    padding-block: 100px;
+
+     @media screen and (max-width: 500px) {
+            padding-block: 30px;
+          }
+
+    .section__content {
+        max-width: 400px;
+        width: 100%;
+
+         @media screen and (max-width: 900px) {
+            max-width: 100%;
+            text-align: center;
+          }
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    h2:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        background-color: #008FC6;
+        width: 35px;
+        height: 3px;
+
+         @media screen and (max-width: 900px) {
+             left: 50%;
+             transform: translate(-50%);
+          }
+    }
+
+    .section__entry {
+        color: #706f7b;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px
+    }
+}

@@ -1,0 +1,67 @@
+/* ------------------------------------------------------------ *\
+	Section grey
+\* ------------------------------------------------------------ */
+
+.section-grey {
+    background-color: #f8f8f8;
+    padding-block: 70px;
+
+    .section__entry {
+        color: #706f7b;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        margin-bottom: 22px;
+    }
+
+    .section__content {
+        padding-right: 70px;
+
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            padding-right: 0;
+        }
+    }
+
+    .section__content > h4 {
+        position: relative;
+        padding-bottom: 8px;
+        margin-bottom: 12px;
+    }
+
+    .section__content > h4:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #008FC6;
+
+         @media screen and (max-width: 1000px) {
+           left: 50%;
+           transform: translate(-50%);
+        }
+    }
+
+    .section__aside {
+         @media screen and (max-width: 1000px) {
+            max-width: 430px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .section__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

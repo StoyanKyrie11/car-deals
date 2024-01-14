@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------ *\
+	Section-fleet
+\* ------------------------------------------------------------ */
+
+.section-fleet {
+    padding-block: 50px 120px;
+
+    .section__head {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .section__entry {
+        color: #706f7b;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        text-shadow: 2px 2px 5px #008FC6;
+    }
+}

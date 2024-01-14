@@ -1,0 +1,54 @@
+/* ------------------------------------------------------------ *\
+	Section about
+\* ------------------------------------------------------------ */
+
+.section-about {
+    padding-block: 100px;
+
+     @media screen and (max-width: 500px) {
+            padding-block: 40px;
+          }
+
+    .section__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    figure {
+        width: 415px;
+        height: 430px;
+        margin-top: 45px;
+    }
+
+    figure > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section__content {
+        max-width: 430px;
+        width: 100%;
+
+         @media screen and (max-width: 500px) {
+            text-align: center;
+          }
+    }
+
+    h2 {
+        margin-bottom: 30px;
+
+         @media screen and (max-width: 500px) {
+            font-size: 32px;
+          }
+    }
+
+    .section__entry {
+        color: #706f7b;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+}

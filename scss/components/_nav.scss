@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	Nav
+\* ------------------------------------------------------------ */
+
+.nav {
+     @media screen and (max-width: 1024px) {
+             margin-bottom: 50px;
+          }
+
+    ul {
+        list-style: none;
+        display: flex;
+
+         @media screen and (max-width: 1024px) {
+             flex-direction: column; 
+             text-align: center;
+          }
+    }
+
+    a {
+        text-decoration: none;
+        color: #010103;
+        cursor: pointer;
+        font-family: Rubik,sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+
+        @media screen and (max-width: 1024px) {
+             color: #fff;
+             font-size: 24px;
+          }
+    }
+
+    li:not(:last-child) {
+        margin-right: 20px;
+
+        @media screen and (max-width: 1024px) {
+             margin: 0 0 20px 0;
+          }
+    }
+
+    ul a {
+         transition: color .3s ease-in-out;
+    }
+
+    ul a:hover {
+        color: #008FC6;
+    }
+
+}

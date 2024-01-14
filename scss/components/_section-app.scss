@@ -1,0 +1,74 @@
+/* ------------------------------------------------------------ *\
+  Section app
+\* ------------------------------------------------------------ */
+
+.section-app {
+    position: relative;
+    min-height: 500px;
+    margin-bottom: 30px;
+    padding-top: 150px;
+
+    @media screen and (max-width: 500px) {
+           padding-top: 5px;
+        }
+
+    .section__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section__content {
+        max-width: 530px;
+        width: 100%;
+        position: relative;
+
+         @media screen and (max-width: 700px) {
+          text-align: center;
+        }
+    }
+
+    .section__entry {
+        color: #706f7b;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+        @media screen and (max-width: 400px) {
+           font-size: 35px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .section__buttons {
+         @media screen and (max-width: 520px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .section__buttons a:first-child {
+       margin-right: 25px;
+
+        @media screen and (max-width: 520px) {
+           margin-right: unset;
+           margin-bottom: 15px;
+        }
+    }
+}

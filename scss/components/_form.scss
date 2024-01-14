@@ -1,0 +1,109 @@
+/* ------------------------------------------------------------ *\
+	Form
+\* ------------------------------------------------------------ */
+
+.form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+    padding: 50px;
+
+    @media screen and (max-width: 400px) {
+           padding: 30px;
+        }
+
+    b {
+        color: #008FC6;
+        padding-left: 5px;
+    }
+
+    .form__head {
+         @media screen and (max-width: 800px) {
+           margin-bottom: 20px;
+        }
+    }
+
+    .form__cols {
+        display: flex;
+        flex-wrap: wrap;
+        margin-inline: -15px;
+    }
+
+     .form__col {
+        flex: 0 0 33.33%;
+        padding-inline: 15px;
+
+         @media screen and (max-width: 800px) {
+          flex: 0 0 50%;
+          margin-bottom: 15px;
+        }
+
+         @media screen and (max-width: 600px) {
+          flex: 0 0 100%;
+        }
+    }
+
+    .form__label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .form__label i {
+        margin-right: 8px;
+
+          @media screen and (max-width: 815px) {
+            margin-right: 3px;
+        }
+    }
+
+    .form__row {
+        margin-bottom: 20px;
+    }
+
+    .form__actions {
+        padding-top: 35px;
+    }
+
+    .form__btn {
+        color: #fff;
+        background-color: #008FC6;
+        width: 100%;
+        border: none;
+        box-shadow: 0 10px 15px rgba(14, 71, 125, 0.35);
+        cursor: pointer;
+        font-family: Rubik,sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-block: 17px;
+        transition: color .3s ease-in-out;
+    }
+
+    .form__btn:hover {
+         box-shadow: 0 10px 15px rgba(6, 34, 61, 0.35);
+         color: #454343;
+         transition: color .3s ease-in-out;
+    }
+}
+
+/* form contact */
+
+.form--contact {
+    .field {
+        background-color: #f2f2f2;
+    }
+
+    .form__label {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .form__actions {
+        padding-top: unset;
+    }
+
+    .form__actions input {
+        text-align: center;
+    }
+}

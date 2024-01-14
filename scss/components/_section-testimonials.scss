@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	Section-testimonials
+\* ------------------------------------------------------------ */
+
+.section-testimonials {
+    padding-block: 100px;
+
+     @media screen and (max-width: 1000px) {
+         padding-block: 100px 10px;
+        }
+
+    @media screen and (max-width: 800px) {
+           padding-block: 70px 10px ;
+        }
+
+    .section__head {
+        max-width: 700px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .section__entry {
+        color: #706f7b;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    h2 {
+        margin-bottom: 25px;
+    }
+
+    h4 {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    h4:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        content: "";
+        width: 150px;
+        height: 3px;
+        background-color: #008FC6;
+    }
+}

@@ -1,0 +1,68 @@
+/* ------------------------------------------------------------ *\
+	Tile
+\* ------------------------------------------------------------ */
+
+.tile {
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    max-width: 337px;
+    width: 100%;
+
+    .tile__image {
+        margin-bottom: 15px;
+        height: 270px;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tile__inner {
+        border-bottom: 1px solid #c6c6c6;
+        padding-bottom: 25px;
+        margin-bottom: 20px;
+    }
+
+    .tile__content {
+         padding: 20px 30px;
+    }
+
+    .tile__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .tile__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+
+    .tile__body-content {
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+
+        & i {
+            margin-right: 20px;
+        }
+    }
+
+    .tile__body .tile__body-content:nth-child(even) {
+        justify-content: flex-end;
+     }
+
+    .tile__body .tile__body-content:nth-child(even) i{
+        margin-inline: 20px 0;
+     }
+
+     .tile__btn {
+        font-size: 20px;
+        width: 100%;
+     }
+}

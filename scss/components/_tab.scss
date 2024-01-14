@@ -1,0 +1,30 @@
+/* ------------------------------------------------------------ *\
+	Tab
+\* ------------------------------------------------------------ */
+
+.tab {
+    display: flex;
+    column-gap: 80px;
+
+    @media screen and (max-width: 1090px) {
+        column-gap: 30px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        column-gap: 100px;
+    }
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+
+    figure {
+        margin-top: 50px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}

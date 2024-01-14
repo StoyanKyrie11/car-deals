@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------ *\
+	Feature
+\* ------------------------------------------------------------ */
+
+.feature {
+    text-align: center;
+    color: #706f7b;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-inline: 55px;
+
+      @media screen and (max-width: 1000px) {
+           padding-inline: 20px;
+        }
+
+    .feature__image {
+        background-image: linear-gradient(to left, #12CBC4,#0652DD,#12CBC4);
+        border-radius: 50%;
+        display: flex;
+    	justify-content: center;
+    	align-items: center;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        cursor: pointer;
+        background-size: 200%;
+        transition: .6s
+    }
+
+    .feature__image:hover {
+        background-position: right;
+    }
+    
+    img {
+        width: 60px;
+    }
+
+    h3 {
+        color: #000;
+        margin-bottom: 10px;
+    }
+}

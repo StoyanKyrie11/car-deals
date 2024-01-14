@@ -1,0 +1,22 @@
+/* ------------------------------------------------------------ *\
+  Email
+\* ------------------------------------------------------------ */
+
+.email {
+  margin-bottom: 12px;
+
+  &:hover a {
+    color: #008FC6;
+  }
+     a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        transition: color .3s ease-in-out;
+    }
+
+    i {
+        margin-right: 10px;
+    }
+}

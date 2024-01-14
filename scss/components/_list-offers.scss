@@ -1,0 +1,59 @@
+/* ------------------------------------------------------------ *\
+	List offers
+\* ------------------------------------------------------------ */
+
+.list-offers {
+    list-style: none;
+
+    li:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    figure {
+        background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        background-size: 200%;
+        transition: 0.6s;
+        margin-right: 15px;
+        margin-top: 10px;
+
+         @media screen and (max-width: 400px) {
+           width: 60px;
+           height: 60px;
+         }
+    }
+
+    figure:hover {
+        background-position: right;
+    }
+
+    img {
+        width: 45px;
+
+        @media screen and (max-width: 400px) {
+           width: 35px;
+         }
+    }
+
+    li {
+        display: flex;
+    }
+
+    h4 {
+        color: #000;
+    }
+
+    .list__content {
+        max-width: 330px;
+        width: 100%;
+        color: #706f7b;
+        font-size: 15px;
+        line-height: 1.3;
+    }
+}

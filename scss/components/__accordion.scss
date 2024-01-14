@@ -1,0 +1,78 @@
+/* ------------------------------------------------------------ *\
+	Accordion
+\* ------------------------------------------------------------ */
+
+.accordion {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 5px 0px #444343;
+    background-color: #fff;
+
+   .accordion__body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s ease-in-out, padding .4s ease-in-out;
+        padding-inline: 45px;
+    }
+ 
+    .accordion__head {
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+         padding: 18px 45px;
+         transition: background-color .5s ease-in-out;
+    }
+
+    .accordion__head:before,
+    .accordion__head:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        width: 9px;
+        height: 9px;
+        border-style: solid;
+        rotate: (-45deg);
+        transform: translateY(-50%);
+    }
+
+    .accordion__head:after {
+        border-color: transparent transparent #000000 #000000;
+        opacity: 1;
+        transition: opacity .8s ease-in-out;
+    }
+
+    .accordion__head:before {
+        border-color: #fff #fff transparent transparent;
+        opacity: 0;
+        transition: opacity .8s ease-in-out;
+    }
+
+    .accordion__section {
+        cursor: pointer;
+
+        &.active .accordion__body {
+          max-height: 300px;
+          padding-block: 20px;
+
+          @media screen and (max-width: 400px) {
+           max-height: 360px;
+        }
+         }
+
+        &.active .accordion__head:before {
+          opacity: 1;
+         }
+
+         &.active .accordion__head:after {
+            opacity: 0;
+         }
+
+         &.active .accordion__head {
+            background-color: #008FC6;
+            color: #fff;
+            box-shadow: 0 10px 15px 0 rgb(53 122 202 / 35%);
+         }
+    }
+}

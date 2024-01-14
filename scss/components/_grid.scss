@@ -1,0 +1,66 @@
+/* ------------------------------------------------------------ *\
+	Grid
+\* ------------------------------------------------------------ */
+
+.grid {
+	display: flex;
+	flex-flow: row wrap;
+
+	.grid__col {
+		max-width: 100%;
+		flex: 1;
+	}
+
+	/*  Grid col 1of2  */
+	.grid__col--1of2 {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+
+	/*  Grid col 1of3  */
+	.grid__col--1of3 {
+		max-width: calc(100% / 3);
+		flex: 0 0 calc(100% / 3);
+	}
+
+	/*  Grid col full  */
+	.grid__col--full {
+		@media screen and (max-width: 1000px) {
+            max-width: 100%;
+			flex: 0 0 100%;
+        }
+	}
+
+	/*  Grid col half  */
+	.grid__col--half {
+		@media screen and (max-width: 1000px) {
+            max-width: 50%;
+			flex: 0 0 50%;
+			margin-bottom: 70px;
+        }
+
+		@media screen and (max-width: 500px) {
+            max-width: 100%;
+			flex: 0 0 100%;
+			margin-bottom: 40px;
+			text-align: center;
+        }
+	}
+
+	.grid__col--tablet {
+		@media screen and (max-width: 900px) {
+            max-width: 100%;
+			flex: 0 0 100%;
+        }
+	}
+}
+
+/* Grid large gutter */ 
+
+.grid--lg-gutter {
+	margin-inline: -2rem;
+
+	.grid__col {
+		padding-inline: 2rem; 
+	}
+}

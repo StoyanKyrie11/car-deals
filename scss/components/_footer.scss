@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------ *\
+  Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+    padding-block: 40px;
+    overflow: hidden;
+
+    @media screen and (max-width: 500px) {
+           padding-block: 20px;
+        }
+
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    h3:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #008FC6;
+
+         @media screen and (max-width: 500px) {
+           left: 50%;
+           transform: translate(-50%);
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    li:hover a {
+        color: #008FC6;
+    }
+
+   .footer__btn a {
+     margin: 0 auto;
+   }
+}

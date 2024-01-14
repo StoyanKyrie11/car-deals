@@ -1,0 +1,31 @@
+/* ------------------------------------------------------------ *\
+	List services
+\* ------------------------------------------------------------ */
+
+.list-services {
+    list-style: none;
+    display: flex;
+
+     @media screen and (max-width: 420px) {
+            justify-content: space-between;
+          }
+
+    img {
+        width: 75px;
+        height: 60px;
+        margin-bottom: 15px;
+
+         @media screen and (max-width: 420px) {
+             width: 60px;
+            height: 50px;
+          }
+    }
+
+    li:not(:last-child) {
+        margin-right: 60px;
+
+         @media screen and (max-width: 420px) {
+            margin-right: 0;
+          }
+    }
+}
